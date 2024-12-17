@@ -109,7 +109,7 @@ export default function TestimonialSlider() {
 
     return (
         <div className="bg-black text-white py-16 px-4">
-            <div className="max-w-8xl mx-auto h-[100vh] ">
+            <div className="max-w-8xl mx-auto ">
                 <TitleSubtitleWidget
                     title="What Our Clients Say"
                     subtitle="Hear from clients who've partnered with Zenviro to bring their visions to life. Our dedication to innovation, quality, and client satisfaction shines through in every project."
@@ -125,7 +125,7 @@ export default function TestimonialSlider() {
                     spaceBetween={20}
                     autoplay={true}
                     modules={[Autoplay]}
-                    className="w-full py-12 h-auto"
+                    className="w-full py-12 h-[500px] relative "
                 >
                     {testimonials.map((testimonial, index) => (
                         <SwiperSlide
@@ -134,7 +134,7 @@ export default function TestimonialSlider() {
                             ref={(el) => (slideRefs.current[index] = el)} // Assign ref to each slide
                         >
                             {({ isActive, isNext, isPrev }) => (
-                                <div className="h-[400] flex items-center">
+                                <div className="h-[450px] flex items-center">
                                     <div
                                         className={`p-8 rounded-3xl transition-all duration-500 h-[300px] flex flex-col justify-between ${isActive
                                             ? 'bg-blue-500 transform translate-y-12'

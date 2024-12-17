@@ -109,7 +109,7 @@ export default function TestimonialSlider() {
 
     return (
         <div className="bg-black text-white py-16 px-4">
-            <div className="max-w-8xl mx-auto h-auto">
+            <div className="max-w-8xl mx-auto h-[100vh] ">
                 <TitleSubtitleWidget
                     title="What Our Clients Say"
                     subtitle="Hear from clients who've partnered with Zenviro to bring their visions to life. Our dedication to innovation, quality, and client satisfaction shines through in every project."

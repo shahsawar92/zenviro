@@ -51,22 +51,19 @@ export default function RotatingCards() {
             <TitleSubtitleWidget
                 title="Our Approach"
                 subtitle="Built on Values, Driven by Innovation"
-                titleClass="text-6xl font-bold text-white"
-                subtitleClass='text-xl text-gray-400'
+                titleClass="text-4xl lg:text-6xl font-bold text-white"
+                subtitleClass='text-sm md:text-xl text-gray-400'
                 containerStyle='text-center mb-20 mt-10'
 
             />
-
-
             <div className="relative w-full max-w-5xl h-[400px] flex items-center justify-center">
                 {cards.map((card, index) => (
                     <div
                         key={card.id}
                         onClick={() => setActiveCard(index)}
-                        className={`absolute w-full max-w-[300px] h-[400] cursor-pointer transition-all duration-500 ease-out ${getCardStyle(index)} `}
+                        className={`absolute w-[250px] md:w-full md:max-w-[300px] h-[400] cursor-pointer transition-all duration-500 ease-out ${getCardStyle(index)} `}
                     >
                         <div className="bg-gradient-to-b from-gray-950 to-black p-8 rounded-2xl border-none  h-full">
-
                             <div className="flex flex-col items-center text-center gap-4">
                                 <div className="p-4 rounded-full bg-gray-800/50">
                                     {card.icon}

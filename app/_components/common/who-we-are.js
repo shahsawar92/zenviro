@@ -44,6 +44,7 @@ export default function WhoWeAreSection() {
     return (
         <div
             ref={sectionRef}
+            id="who-we-are"
             className="flex items-center justify-center min-h-[70vh] bg-gradient-to-r from-blue-900 via-black via-50% to-blue-900"
         >
             <div className="flex flex-col md:flex-row items-center max-w-5xl p-8 rounded-lg space-y-8 md:space-y-0">

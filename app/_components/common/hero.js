@@ -68,14 +68,18 @@ export default function HeroComponent() {
                         ref={buttonGroupRef}
                         className="flex flex-wrap gap-4 justify-center"
                     >
-                        <GradientButton variant="work">
-                            <Link href="#services" className={"text-white"}>
+                        <Link href="#services" className={"text-white"}>
+
+                            <GradientButton variant="work">
                                 🚀 Explore Our Services
-                            </Link>
-                        </GradientButton>
-                        <GradientButton>
-                            <Link href="#work">See Our Work</Link>
-                        </GradientButton>
+
+                            </GradientButton>
+                        </Link>
+                        <Link href="#our-work" className={"no-underline text-white"}>
+                            <GradientButton >
+                                <div className={"no-underline text-white"}>   See Our Work</div>
+                            </GradientButton>
+                        </Link>
                     </div>
                 </div>
 
@@ -93,6 +97,6 @@ export default function HeroComponent() {
                     <div className="absolute inset-0 bg-blue-500/10" />
                 </div>
             </div>
-        </section>
+        </section >
     );
 }

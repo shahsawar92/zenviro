@@ -1,8 +1,9 @@
-'use client'
+'use client';
 import { useState } from "react";
 import Image from "next/image";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { BRAND } from "@/app/_assets/Images";
+import Link from "next/link";
 
 const Navbar = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -23,34 +24,34 @@ const Navbar = () => {
                 {/* Desktop Navigation */}
                 <ul className="hidden md:flex space-x-8 px-8 gap-5 text-sm">
                     <li>
-                        <a href="#" className="text-blue-500 hover:text-blue-300">
+                        <Link href="#" className="text-blue-500 hover:text-blue-300">
                             Home
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#" className="hover:text-blue-300">
+                        <Link href="#who-we-are" className="hover:text-blue-300">
                             About Us
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#" className="hover:text-blue-300">
+                        <Link href="#services" className="hover:text-blue-300">
                             Services
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#" className="hover:text-blue-300">
+                        <Link href="#our-work" className="hover:text-blue-300">
                             Portfolio
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#" className="hover:text-blue-300">
+                        <Link href="#" className="hover:text-blue-300">
                             Case Studies
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#" className="hover:text-blue-300">
+                        <Link href="#" className="hover:text-blue-300">
                             Blog
-                        </a>
+                        </Link>
                     </li>
                 </ul>
 
@@ -64,48 +65,49 @@ const Navbar = () => {
             </div>
 
             {/* Sidebar for Mobile */}
-            {isSidebarOpen && (
-                <div className="fixed top-0 left-0 w-2/3 h-full bg-gray-800 text-white shadow-lg z-50 p-6 md:hidden">
-                    <ul className="space-y-6 text-lg">
-                        <li>
-                            <a href="#" className="flex items-center space-x-2 hover:text-blue-300">
-                                <span className="text-blue-500">🏠</span>
-                                <span>Home</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" className="flex items-center space-x-2 hover:text-blue-300">
-                                <span className="text-blue-500">📖</span>
-                                <span>About Us</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" className="flex items-center space-x-2 hover:text-blue-300">
-                                <span className="text-blue-500">💼</span>
-                                <span>Services</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" className="flex items-center space-x-2 hover:text-blue-300">
-                                <span className="text-blue-500">📸</span>
-                                <span>Portfolio</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" className="flex items-center space-x-2 hover:text-blue-300">
-                                <span className="text-blue-500">📊</span>
-                                <span>Case Studies</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" className="flex items-center space-x-2 hover:text-blue-300">
-                                <span className="text-blue-500">📝</span>
-                                <span>Blog</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            )}
+            <div
+                className={`fixed top-0 left-0 h-full w-2/3 bg-black text-white shadow-lg z-50 p-6 md:hidden transform transition-transform duration-300 ease-in-out ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"
+                    }`}
+            >
+                <ul className="space-y-6 text-lg">
+                    <li>
+                        <Link href="/" className="flex items-center space-x-2 hover:text-blue-300">
+                            <span className="text-blue-500">🏠</span>
+                            <span>Home</span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="#who-we-are" className="flex items-center space-x-2 hover:text-blue-300">
+                            <span className="text-blue-500">📖</span>
+                            <span>About Us</span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="#services" className="flex items-center space-x-2 hover:text-blue-300">
+                            <span className="text-blue-500">💼</span>
+                            <span>Services</span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="#our-work" className="flex items-center space-x-2 hover:text-blue-300">
+                            <span className="text-blue-500">📸</span>
+                            <span>Portfolio</span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="#" className="flex items-center space-x-2 hover:text-blue-300">
+                            <span className="text-blue-500">📊</span>
+                            <span>Case Studies</span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="#" className="flex items-center space-x-2 hover:text-blue-300">
+                            <span className="text-blue-500">📝</span>
+                            <span>Blog</span>
+                        </Link>
+                    </li>
+                </ul>
+            </div>
         </nav>
     );
 };

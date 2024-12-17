@@ -1,5 +1,4 @@
 'use client'
-
 import { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
@@ -76,7 +75,7 @@ export function LogoSlider() {
                     className="!overflow-visible"
                     breakpoints={{
                         320: {
-                            slidesPerView: 3,
+                            slidesPerView: 1.5,
                         },
                         640: {
                             slidesPerView: 5,
@@ -99,7 +98,7 @@ export function LogoSlider() {
                                     <Image
                                         src={logo.src}
                                         alt={logo.alt}
-                                        width={130}
+                                        width={150}
                                         className=" object-cover"
                                     />
                                 </div>

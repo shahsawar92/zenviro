@@ -131,15 +131,15 @@ export default function ServicesGrid() {
     });
 
     return (
-        <div ref={sectionRef} className="bg-black text-white py-12">
+        <div ref={sectionRef} id='services' className="bg-black text-white py-12">
             <div ref={titleRef}>
 
                 <TitleSubtitleWidget
                     ref={titleRef}
                     title="What We Offer"
                     subtitle="Bringing Ideas to Life, One Pixel at a Time"
-                    titleClass='text-6xl font-bold text-white'
-                    subtitleClass='mt-4 text-lg font-extralight text-gray-300 leading-6 tracking-widest'
+                    titleClass='text-4xl lg:text-6xl font-bold text-white'
+                    subtitleClass='mt-4 text-sm lg:text-lg font-extralight text-gray-300 leading-6 tracking-widest'
                     containerStyle='text-center mb-8'
                 />
             </div>

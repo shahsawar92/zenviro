@@ -113,8 +113,8 @@ export default function TestimonialSlider() {
                 <TitleSubtitleWidget
                     title="What Our Clients Say"
                     subtitle="Hear from clients who've partnered with Zenviro to bring their visions to life. Our dedication to innovation, quality, and client satisfaction shines through in every project."
-                    titleClass="text-6xl font-bold text-white"
-                    subtitleClass="mt-4 text-lg font-extralight text-gray-300 leading-6 tracking-widest max-w-3xl mx-auto"
+                    titleClass="text-4xl lg:text-6xl font-bold text-white"
+                    subtitleClass="mt-4 text-sm lg:text-lg font-extralight text-gray-300 leading-6 tracking-widest max-w-3xl mx-auto"
                     containerStyle="text-center"
                 />
 
@@ -125,6 +125,28 @@ export default function TestimonialSlider() {
                     spaceBetween={20}
                     autoplay={true}
                     modules={[Autoplay]}
+                    breakpoints={{
+                        320: {
+                            slidesPerView: 1.5,
+                            spaceBetween: 20,
+                        },
+                        640: {
+                            slidesPerView: 2,
+                            spaceBetween: 20,
+                        },
+                        768: {
+                            slidesPerView: 3,
+                            spaceBetween: 20,
+                        },
+                        1024: {
+                            slidesPerView: 4,
+                            spaceBetween: 20,
+                        },
+                        1280: {
+                            slidesPerView: 5,
+                            spaceBetween: 20,
+                        },
+                    }}
                     className="w-full py-12 h-[500px] relative "
                 >
                     {testimonials.map((testimonial, index) => (

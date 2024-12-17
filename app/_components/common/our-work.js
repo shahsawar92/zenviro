@@ -3,7 +3,7 @@ import TitleSubtitleWidget from "../ui/Title";
 
 export default function WorkSection() {
     return (
-        <div className="w-dvw h-auto flex items-center  bg-black mx-auto p-8">
+        <div id="our-work" className="w-dvw h-auto flex items-center  bg-black mx-auto p-8">
             <div className="max-w-6xl mx-auto">
                 <div className="rounded-3xl bg-blue-500 px-8 md:px-12 relative overflow-hidden" style={{ backgroundImage: 'url(/bg-work.png)', backgroundSize: 'cover', backgroundPosition: 'left' }}>
                     <div className="grid md:grid-cols-2 gap-8 items-center" >
@@ -12,10 +12,9 @@ export default function WorkSection() {
                                 title="Our Work in Action"
                                 containerStyle='text-white'
                                 subtitle="Browse a selection of our recent projects that demonstrate the impact of our 3D visualizations, VR experiences, and interactive environments. Each project is crafted with a focus on innovation, sustainability, and storytelling."
-                                titleClass="text-4xl md:text-5xl font-bold text-white leading-tight 
+                                titleClass="text-2xl md:text-5xl font-bold text-white leading-tight 
                                  inline-block after:content-['\A'] after:block after:text-xl"
-                                subtitleClass="text-lg md:text-xl text-blue-100 leading-relaxed max-w-lg"
-
+                                subtitleClass="text-sm md:text-lg 2xl:text-xl text-blue-100 leading-relaxed max-w-lg"
                             />
 
                             {/* <Button

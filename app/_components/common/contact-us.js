@@ -13,13 +13,13 @@ export default function ContactCard() {
                         <TitleSubtitleWidget
                             title="Contact Information"
                             subtitle="Say something to start a live chat!"
-                            titleClass="text-4xl font-semibold text-white"
-                            subtitleClass='mt-4 text-lg font-extralight text-gray-300 leading-6 tracking-widest'
+                            titleClass="text-4xl lg:text-6xl font-semibold text-white"
+                            subtitleClass='mt-4 text-sm md:text-lg font-extralight text-gray-300 leading-6 tracking-widest'
                             containerStyle=''
 
                         />
 
-                        <div className="space-y-6">
+                        <div className="space-y-6 text-black">
                             <div className="flex items-center space-x-4">
                                 <Phone className="w-6 h-6" />
                                 <span>+1012 3456 789</span>
@@ -62,7 +62,7 @@ export default function ContactCard() {
                                     <label className="block text-sm text-gray-600 mb-2">First Name</label>
                                     <input
                                         type="text"
-                                        className="w-full px-4 py-2 border-b border-gray-300 focus:border-blue-500 outline-none"
+                                        className="w-full px-4 py-2 border-b border-gray-300 focus:border-blue-500 outline-none text-gray-500"
                                         placeholder="John"
                                     />
                                 </div>
@@ -70,7 +70,7 @@ export default function ContactCard() {
                                     <label className="block text-sm text-gray-600 mb-2">Last Name</label>
                                     <input
                                         type="text"
-                                        className="w-full px-4 py-2 border-b border-gray-300 focus:border-blue-500 outline-none"
+                                        className="w-full px-4 py-2 border-b border-gray-300 focus:border-blue-500 outline-none text-gray-500"
                                         placeholder="Doe"
                                     />
                                 </div>
@@ -81,7 +81,7 @@ export default function ContactCard() {
                                     <label className="block text-sm text-gray-600 mb-2">Email</label>
                                     <input
                                         type="email"
-                                        className="w-full px-4 py-2 border-b border-gray-300 focus:border-blue-500 outline-none"
+                                        className="w-full px-4 py-2 border-b border-gray-300 focus:border-blue-500 outline-none text-gray-500"
                                         placeholder="email@example.com"
                                     />
                                 </div>
@@ -89,7 +89,7 @@ export default function ContactCard() {
                                     <label className="block text-sm text-gray-600 mb-2">Phone Number</label>
                                     <input
                                         type="tel"
-                                        className="w-full px-4 py-2 border-b border-gray-300 focus:border-blue-500 outline-none"
+                                        className="w-full px-4 py-2 border-b border-gray-300 focus:border-blue-500 outline-none text-gray-500"
                                         placeholder="+1 012 3456 789"
                                     />
                                 </div>
@@ -103,7 +103,7 @@ export default function ContactCard() {
                                             <input
                                                 type="radio"
                                                 name="subject"
-                                                className="w-4 h-4 text-blue-500 border-gray-300 focus:ring-blue-500"
+                                                className="w-4 h-4 text-blue-500 border-gray-300 focus:ring-blue-500 "
                                             />
                                             <span className="text-sm text-gray-600">{option}</span>
                                         </label>
@@ -114,7 +114,7 @@ export default function ContactCard() {
                             <div>
                                 <label className="block text-sm text-gray-600 mb-2">Message</label>
                                 <textarea
-                                    className="w-full px-4 py-2 border-b border-gray-300 focus:border-blue-500 outline-none resize-none"
+                                    className="w-full px-4 py-2 border-b border-gray-300 focus:border-blue-500 outline-none resize-none text-gray-500"
                                     rows={4}
                                     placeholder="Write your message.."
                                 ></textarea>
